@@ -32,7 +32,6 @@ app.listen(3000, () => {
 });
 
 app.get('/sunsets', (request, response) => {
-  //response.status(200).send("<img src='https://i.ytimg.com/vi/f61PbjjVuF0/maxresdefault.jpg' /><img src='http://blog.panamajack.com/wp-content/uploads/2014/02/ss3.jpg' /><img src='http://restaurantsouterbanks.com/wp-content/uploads/portfolio/outer-banks-sunsets/aqua-restaurant-sunset-contest-2015-winner-may-31.jpg' />")
   response.sendFile(path.join(__dirname, 'public/sunsets.html'));
 })
 
